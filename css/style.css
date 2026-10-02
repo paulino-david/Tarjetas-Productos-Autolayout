@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #D7CBB3;
+  padding: 10px 30px;
+  gap: 38px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  position: sticky;
+  top: 1rem;
+}
+header .para-ti-popular {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #FDFAFA;
+  border-radius: 20px;
+}
+header .para-ti-popular div, header .para-ti-popular a {
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+}
+header .para-ti-popular .clicked {
+  background-color: #EA512F;
+  color: #FDFAFA;
+}
+
+main {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 38px;
+}
+main .producto .div-img-producto {
+  width: 100%;
+  height: 40%;
+}
+main .producto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .producto {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  width: 328px;
+  height: 459px;
+  background-color: #FDFAFA;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2666666667);
+}
+main .producto .descripcion-producto {
+  color: #565656;
+  height: 5rem;
+  overflow: hidden;
+}
+main .producto .div-precio-boton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .producto .div-precio-boton .boton {
+  background-color: #EA512F;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #FDFAFA;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

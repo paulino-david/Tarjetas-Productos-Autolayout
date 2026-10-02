@@ -1,0 +1,87 @@
+@use "variables"
+@use "mixins"
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Inter", sans-serif
+
+    text-decoration: none
+
+
+body
+    background-color: variables.$colo-body
+    padding: variables.$padding-body
+    gap: variables.$gap-body
+    height: 100dvh
+    @include mixins.flex($direccion:column,$align: flex-start,$justify:center )
+
+
+header
+    @include mixins.flex($direccion:column,$align: center,$justify:center )
+    width: 100%
+    height: 10%
+    position: sticky
+    top: 1rem
+    .para-ti-popular
+        @include mixins.flex($align: center,$justify:space-between )
+        width: 90%
+        background-color: variables.$blanco
+        border-radius: variables.$borde-top
+        div,a
+            padding: 10px 40px
+            border-radius: variables.$borde-top
+            font-weight: bold
+            color: black
+        .clicked
+            background-color: variables.$color-boton
+            color: variables.$blanco
+
+
+main
+    height: 90%
+    @include mixins.flex($direccion: column,$align: center ,$justify: start )
+    width: 100%
+    gap: variables.$gap-body
+    .producto
+        .div-img-producto
+            width: 100%
+            height: 40%
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+        @include mixins.flex($direccion: column,$justify: center )
+        width: variables.$width-producto
+        height: variables.$height-producto
+        background-color: variables.$blanco
+        border-radius: variables.$paddin-border-producto
+        padding: variables.$paddin-border-producto 
+        gap: variables.$gap-producto
+        box-shadow: variables.$shadow-producto
+
+        .descripcion-producto
+            color: variables.$gris-descripcion
+            height: 5rem
+            overflow: hidden
+
+        .div-precio-boton
+            @include mixins.flex($align:center ,$justify: space-between )
+
+            .boton
+                background-color: variables.$color-boton
+                padding: variables.$paddin-btn
+                border-radius: variables.$borde-boton
+                color: variables.$blanco
+                font-weight: bold
+                outline: none
+                border: none
+                font-size: 17px
+                cursor: pointer
+
+        
+
+
+
+
